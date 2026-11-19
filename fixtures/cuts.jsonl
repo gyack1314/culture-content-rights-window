@@ -1,0 +1,2 @@
+{"row_id":"cuts:000001","cut":"full-v1","program":"P1","duration_ms":120000,"mapping_revision":1,"pieces":[{"cut_start":0,"cut_end":120000,"source_start":0,"source_end":120000}]}
+{"row_id":"cuts:000002","cut":"short-v1","program":"P1","duration_ms":40000,"mapping_revision":1,"pieces":[{"cut_start":0,"cut_end":20000,"source_start":10000,"source_end":30000},{"cut_start":20000,"cut_end":40000,"source_start":10000,"source_end":30000}]}

@@ -1,0 +1,22 @@
+{
+  "playback": "alpha相邻心跳可证明观看的条件：同会话、墙钟间隔>0且<=12000ms、播放位置前进>=0且与rate*墙钟时长相差<=1000ms、两端visible。回拖事件本身不生成观看区间，下一合法前进可以生成。beta直接区间但有效时间不超过墙钟时长；后台visible=false不计有效观看。",
+  "metrics": "覆盖为映射到源节目后可证明源区间的并集长度，最多节目长；有效时间为真实墙钟观看时长，倍速不按位置跨度冒充墙钟时长。完成率为源覆盖/节目长，平台声明播放数单独展示，不强行换算。",
+  "identity": "仅allowed=true的显式映射可跨平台合并用户，未允许或无映射者单列平台内，不能宣称全局精确去重总人数。screen无会话数据，不产生精确漏斗或人数。",
+  "billing": {
+    "alpha": {
+      "region": "CN",
+      "minimum_effective_ms": 20000,
+      "minimum_source_coverage_ms": 20000,
+      "minor_per_view": 20,
+      "cap_minor": 100000
+    },
+    "beta": {
+      "region": "CN",
+      "minimum_effective_ms": 30000,
+      "minimum_source_coverage_ms": 18000,
+      "minor_per_view": 20,
+      "cap_minor": 100000
+    }
+  },
+  "compare": "按平台单source_position和mapping_revision计算可比合格会话量。高于平台已确认覆盖的位置不能声称完整，source_position之外的新数据不能直接与旧单比较。event_id最高可见revision替代原观察；结算修订需引用原单。日汇总只可对平台声明量，不伪造会话资格。"
+}

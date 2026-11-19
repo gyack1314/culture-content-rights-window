@@ -1,0 +1,136 @@
+{
+  "schema_version": 2,
+  "synthetic": true,
+  "project": "跨平台分段播放的有效观看与结算口径核对",
+  "tables": [
+    {
+      "file": "fixtures/cuts.jsonl",
+      "rows": 2,
+      "sha256": "41e737d063e5299fbd4a3e6926710d6502d871dfd9c8e9ca2e4b6aef47ab1e81",
+      "columns": [
+        "cut",
+        "duration_ms",
+        "mapping_revision",
+        "pieces",
+        "program",
+        "row_id"
+      ],
+      "unique_key": [
+        "row_id"
+      ]
+    },
+    {
+      "file": "fixtures/heartbeats.jsonl",
+      "rows": 561,
+      "sha256": "e15e91e99192393563a7a7cf1ec4e085547eb783871a433b5c4e61661ca69af6",
+      "columns": [
+        "cut",
+        "event_id",
+        "platform",
+        "position_ms",
+        "rate",
+        "received_position",
+        "region",
+        "revision",
+        "row_id",
+        "session",
+        "user",
+        "visible",
+        "wall_ms"
+      ],
+      "unique_key": [
+        "row_id"
+      ]
+    },
+    {
+      "file": "fixtures/watch_intervals.jsonl",
+      "rows": 80,
+      "sha256": "0546411a35a761f52d6c2887e3c5e27f8e92375147e069b6f9208011febfc30d",
+      "columns": [
+        "cut",
+        "end_ms",
+        "event_id",
+        "platform",
+        "rate",
+        "received_position",
+        "region",
+        "revision",
+        "row_id",
+        "session",
+        "start_ms",
+        "user",
+        "visible",
+        "wall_duration_ms"
+      ],
+      "unique_key": [
+        "row_id"
+      ]
+    },
+    {
+      "file": "fixtures/daily_totals.jsonl",
+      "rows": 1,
+      "sha256": "a4a61d943b1e907f9b4fc4691f5e7be53aae041ca09a390167aad699ff95aee3",
+      "columns": [
+        "cut",
+        "day",
+        "declared_plays",
+        "declared_seconds",
+        "platform",
+        "received_position",
+        "row_id"
+      ],
+      "unique_key": [
+        "row_id"
+      ]
+    },
+    {
+      "file": "fixtures/identity_links.jsonl",
+      "rows": 30,
+      "sha256": "c54d936d9204760cca75e9724ba1aa20c5b8fc74c342c0720acd830d61b2b9a9",
+      "columns": [
+        "allowed",
+        "alpha_user",
+        "beta_user",
+        "row_id"
+      ],
+      "unique_key": [
+        "row_id"
+      ]
+    },
+    {
+      "file": "fixtures/settlements.jsonl",
+      "rows": 2,
+      "sha256": "e4fe1e2a559219cad47c3cf02fb5a9af40173c98ecd224af470493656cb2adc6",
+      "columns": [
+        "amount_minor",
+        "claimed_qualified_views",
+        "cut",
+        "mapping_revision",
+        "period",
+        "platform",
+        "revision",
+        "row_id",
+        "source_position",
+        "statement_id"
+      ],
+      "unique_key": [
+        "row_id"
+      ]
+    },
+    {
+      "file": "fixtures/coverage.jsonl",
+      "rows": 3,
+      "sha256": "a20e1b5b1ccf5dc56429bd381c6887030210a33a462ac24e4ded86775a903edf",
+      "columns": [
+        "complete",
+        "platform",
+        "row_id",
+        "through_position"
+      ],
+      "unique_key": [
+        "row_id"
+      ]
+    }
+  ],
+  "scope": "本地合成的原始来源观察、业务政策与操作请求。"
+}

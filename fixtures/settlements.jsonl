@@ -1,0 +1,2 @@
+{"row_id":"settlements:000001","statement_id":"ST-A","revision":1,"platform":"alpha","cut":"full-v1","source_position":3,"mapping_revision":1,"claimed_qualified_views":21,"amount_minor":420,"period":"2026-11"}
+{"row_id":"settlements:000002","statement_id":"ST-B","revision":1,"platform":"beta","cut":"short-v1","source_position":4,"mapping_revision":1,"claimed_qualified_views":75,"amount_minor":1500,"period":"2026-11"}
