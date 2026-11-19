@@ -70,8 +70,7 @@
     "timezones": [
       "Asia/Shanghai",
       "America/Los_Angeles"
-    ],
-    "platforms": 3,
-    "cut_versions": 2
-  }
+    ]
+  },
+  "observed_record_count": 6
 }
